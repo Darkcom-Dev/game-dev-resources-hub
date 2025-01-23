@@ -1,0 +1,20 @@
+GIMP Palette
+Name: Thompson-Computers
+Columns: 0
+#
+  0   0   0	black
+255   0   0	red
+  0 255   0	green
+255 255   0	yellow
+  0   0 255	blue
+255   0 255	magenta
+  0 255 255	cyan
+255 255 255	white
+238 187   0	Sin nombre
+221 119 119	Sin nombre
+119 221 119	Sin nombre
+221 221 119	Sin nombre
+119 119 221	Sin nombre
+221 119 238	Sin nombre
+187 255 255	Sin nombre
+187 187 187	gray

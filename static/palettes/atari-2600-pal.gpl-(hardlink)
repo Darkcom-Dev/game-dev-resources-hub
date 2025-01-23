@@ -1,0 +1,108 @@
+GIMP Palette
+Name: Atari-2600-PAL
+Columns: 0
+#
+  0   0   0	Sin nombre
+ 64  64  64	Sin nombre
+108 108 108	Sin nombre
+144 144 144	Sin nombre
+176 176 176	Sin nombre
+200 200 200	Sin nombre
+220 220 220	Sin nombre
+236 236 236	Sin nombre
+128  88   0	Sin nombre
+148 112  32	Sin nombre
+168 132  60	Sin nombre
+188 156  88	Sin nombre
+204 172 112	Sin nombre
+220 192 132	Sin nombre
+236 208 156	Sin nombre
+252 224 176	Sin nombre
+ 68  92   0	Sin nombre
+ 92 120  32	Sin nombre
+116 144  60	Sin nombre
+140 172  88	Sin nombre
+160 192 112	Sin nombre
+176 212 132	Sin nombre
+192 232 156	Sin nombre
+212 252 176	Sin nombre
+112  52   0	Sin nombre
+136  80  32	Sin nombre
+160 104  60	Sin nombre
+180 132  88	Sin nombre
+200 152 112	Sin nombre
+220 172 132	Sin nombre
+236 192 156	Sin nombre
+252 212 176	Sin nombre
+  0 100  20	Sin nombre
+ 32 128  52	Sin nombre
+ 60 152  80	Sin nombre
+ 88 176 108	Sin nombre
+112 196 132	Sin nombre
+132 216 156	Sin nombre
+156 232 180	Sin nombre
+176 252 200	Sin nombre
+112   0  20	Sin nombre
+136  32  52	Sin nombre
+160  60  80	Sin nombre
+180  88 108	Sin nombre
+200 112 132	Sin nombre
+220 132 156	Sin nombre
+236 156 180	Sin nombre
+252 176 200	Sin nombre
+  0  92  92	Sin nombre
+ 32 116 116	Sin nombre
+ 60 140 140	Sin nombre
+ 88 164 164	Sin nombre
+112 184 184	Sin nombre
+132 200 200	Sin nombre
+156 220 220	Sin nombre
+176 236 236	Sin nombre
+112   0  92	Sin nombre
+132  32 116	Sin nombre
+148  60 136	Sin nombre
+168  88 156	Sin nombre
+180 112 176	Sin nombre
+196 132 192	Sin nombre
+208 156 208	Sin nombre
+224 176 224	Sin nombre
+  0  60 112	Sin nombre
+ 28  88 136	Sin nombre
+ 56 116 160	Sin nombre
+ 80 140 180	Sin nombre
+104 164 200	Sin nombre
+124 184 220	Sin nombre
+144 204 236	Sin nombre
+164 224 252	Sin nombre
+ 88   0 112	Sin nombre
+108  32 136	Sin nombre
+128  60 160	Sin nombre
+148  88 180	Sin nombre
+164 112 200	Sin nombre
+180 132 220	Sin nombre
+196 156 236	Sin nombre
+212 176 252	Sin nombre
+  0  32 112	Sin nombre
+ 28  60 136	Sin nombre
+ 56  88 160	Sin nombre
+ 80 116 180	Sin nombre
+104 136 200	Sin nombre
+124 160 220	Sin nombre
+144 180 236	Sin nombre
+164 200 252	Sin nombre
+ 60   0 128	Sin nombre
+ 84  32 148	Sin nombre
+108  60 168	Sin nombre
+128  88 188	Sin nombre
+148 112 204	Sin nombre
+168 132 220	Sin nombre
+184 156 236	Sin nombre
+200 176 252	Sin nombre
+  0   0 136	Sin nombre
+ 32  32 156	Sin nombre
+ 60  60 176	Sin nombre
+ 88  88 192	Sin nombre
+112 112 208	Sin nombre
+132 132 224	Sin nombre
+156 156 236	Sin nombre
+176 176 252	Sin nombre

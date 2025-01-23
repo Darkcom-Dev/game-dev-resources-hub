@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Visualización de Paleta de Colores GPL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        #palette-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualización de Paleta de Colores GPL</h1>
+    <div id="palette-container"></div>
+
+    <script>
+        // Simulación de colores extraídos de un archivo .gpl
+        const palette = [
+            { rgb: '255, 0, 0', name: 'Red' },
+            { rgb: '0, 255, 0', name: 'Green' },
+            { rgb: '0, 0, 255', name: 'Blue' },
+            { rgb: '255, 255, 0', name: 'Yellow' },
+            { rgb: '0, 255, 255', name: 'Cyan' },
+            { rgb: '255, 0, 255', name: 'Magenta' }
+        ];
+
+        // Obtener el contenedor de la paleta
+        const paletteContainer = document.getElementById('palette-container');
+
+        // Crear cuadros de color basados en la paleta
+        palette.forEach(color => {
+            const colorBox = document.createElement('div');
+            colorBox.className = 'color-box';
+            colorBox.style.backgroundColor = `rgb(${color.rgb})`;
+            colorBox.textContent = color.name;
+            paletteContainer.appendChild(colorBox);
+        });
+    </script>
+</body>
+</html>

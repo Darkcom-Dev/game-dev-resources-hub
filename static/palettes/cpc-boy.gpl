@@ -1,0 +1,36 @@
+GIMP Palette
+#Palette Name: CPC Boy
+#Description: "I sort of like the <a href="https://lospec.com/palette-list/amstrad-cpc">Armstrad CPC palette</a>, but it's a bit too in my face with saturation madness. How does it look desaturated? Well, Photoshop changes the values a bit when desaturating, but I went in and did some manual tweaking. Only 27 entries, so I added a A Gameboy screen gradient at the end. Unsure about ordering. Version is at 3 or 4 now." -<a href="http://androidarts.com/palette/16pal.htm">Arne Niklas Jansson</a>
+#Colors: 32
+0	0	0	000000
+27	27	101	1b1b65
+53	53	201	3535c9
+102	30	37	661e25
+85	51	97	553361
+127	53	201	7f35c9
+188	53	53	bc3535
+192	70	110	c0466e
+223	109	155	df6d9b
+27	101	27	1b651b
+27	110	131	1b6e83
+30	121	229	1e79e5
+121	95	27	795f1b
+128	128	128	808080
+145	148	223	9194df
+201	127	53	c97f35
+227	155	141	e39b8d
+248	120	248	f878f8
+53	175	53	35af35
+53	183	143	35b78f
+53	193	215	35c1d7
+127	201	53	7fc935
+173	200	170	adc8aa
+141	225	199	8de1c7
+225	198	67	e1c643
+228	221	154	e4dd9a
+255	255	255	ffffff
+238	234	224	eeeae0
+172	181	107	acb56b
+118	132	72	768448
+63	80	63	3f503f
+36	49	55	243137

@@ -1,0 +1,526 @@
+
+
+/*Fuentes SIL Open Font*/
+
+@font-face {
+    font-family: 'Noto Mono';
+    src: url('../fonts/sil-open-font/monoespaciadas/noto-mono-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/sil-open-font/pixeladas/press-start-2-p-regular.ttf')
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('../fonts/sil-open-font/monoespaciadas/fura-mono-regular-powerline.otf')
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/sil-open-font/inconsolata-for-powerline.otf')
+}
+
+@font-face {
+    font-family: 'Liberation Mono';
+    src: url('../fonts/sil-open-font/monoespaciadas/liberation-mono-powerline.ttf')
+}
+/*Fuentes  apache*/
+@font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/apache-2/arimo-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Cousine';
+    src: url('../fonts/apache-2/cousine-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Droid Sans Mono';
+    src: url('../fonts/apache-2/droid-sans-mono-for-powerline.otf')
+}
+
+@font-face {
+    font-family: 'Jet Brains Mono';
+    src: url('../fonts/apache-2/jet-brains-mono-regular-nerd-font-complete-mono.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/apache-2/roboto-mono-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Symbol Neu';
+    src: url('../fonts/apache-2/symbol-neu-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Tinos';
+    src: url('../fonts/apache-2/tinos-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Meslo LG L DZ Regular';
+    src: url('../fonts/apache-2/meslo-lg-l-dz-regular-for-powerline.ttf')
+}
+
+@font-face {
+    font-family: 'Mezlo LG M DZ Regular';
+    src: url('../fonts/apache-2/meslo-lg-m-dz-regular-for-powerline.ttf')
+}
+
+/*Fuentes CCSA*/
+@font-face {
+    font-family: '3270 Medium';
+    src: url('../fonts/ccsa-license/3270-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Game Over';
+    src: url('../fonts/ccsa-license/game-over.ttf') format('truetype');
+}
+
+/*Fuentes Freeware*/
+@font-face {
+    font-family: '1942';
+    src: url('../fonts/freeware-license/1942.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Henry Morgan Hand';
+    src: url('../fonts/freeware-license/henry-morgan-hand.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monofur';
+    src: url('../fonts/freeware-license/monofur-for-powerline.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rapscallese';
+    src: url('../fonts/freeware-license/rapscall.ttf') format('truetype');
+}
+
+/*Fuentes manuscritas*/
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/sil-open-font/manuscritas/amatic-sc/AmaticSC-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/sil-open-font/manuscritas/caveat/Caveat-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    src: url('../fonts/sil-open-font/manuscritas/gloria-hallelujah/GloriaHallelujah-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../fonts/sil-open-font/manuscritas/indie-flower/IndieFlower-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('../fonts/sil-open-font/manuscritas/kalam/Kalam-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Patrik Hand';
+    src: url('../fonts/sil-open-font/manuscritas/patrick-hand/PatrickHand-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('../fonts/sil-open-font/manuscritas/sacramento/Sacramento-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../fonts/sil-open-font/manuscritas/shadows-into-light/ShadowsIntoLight-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Smooch';
+    src: url('../fonts/sil-open-font/manuscritas/smooch/Smooch-Regular.ttf')
+}
+
+/* Fuentes MIT */
+
+@font-face {
+    font-family: 'Agave';
+    src: url('../fonts/mit/agave-regular-nerd-font-complete-mono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pro Font';
+    src: url('../fonts/mit/pro-font-for-powerline.ttf') format('truetype');
+}
+
+/* Fuentes sin licencia */
+
+@font-face {
+    font-family: 'Amputa Bangiz';
+    src: url('../fonts/sin-licencia/amputa-bangiz.ttf')
+}
+
+@font-face {
+    font-family: 'At-01 Ex Plus Alpha Mono';
+    src: url('../fonts/sin-licencia/at-01-ex-plus-alpha-mono.ttf')
+}
+
+@font-face {
+    font-family: 'At-01 Ex Plus Alpha';
+    src: url('../fonts/sin-licencia/at-01-ex-plus-alpha.ttf')
+}
+
+@font-face {
+    font-family: 'At-01 Ex Plus Mono';
+    src: url('../fonts/sin-licencia/at-01-ex-plus-mono.ttf')
+}
+
+@font-face {
+    font-family: 'At-02 Ex Mono';
+    src: url('../fonts/sin-licencia/at-02-ex-mono.ttf')
+}
+
+@font-face {
+    font-family: 'Ataristocrat';
+    src: url('../fonts/sin-licencia/ataristocrat.ttf')
+}
+
+@font-face {
+    font-family: 'Bbsesque';
+    src: url('../fonts/sin-licencia/bbsesque.ttf')
+}
+
+@font-face {
+    font-family: 'Bit Casual';
+    src: url('../fonts/sin-licencia/bit-casual.ttf')
+}
+
+@font-face {
+    font-family: 'Born 2B Sporty V 2';
+    src: url('../fonts/sin-licencia/born-2b-sporty-v-2.ttf')
+}
+
+@font-face {
+    font-family: 'BTSEPS 2';
+    src: url('../fonts/sin-licencia/btseps-2.ttf')
+}
+
+@font-face {
+    font-family: 'Commodore 64 V 6.3';
+    src: url('../fonts/sin-licencia/commodore-64-v-6.3.ttf')
+}
+
+@font-face {
+    font-family: 'Commodore Angled V 1.2';
+    src: url('../fonts/sin-licencia/commodore-angled-v-1.2.ttf')
+}
+
+@font-face {
+    font-family: 'G-15 Ex';
+    src: url('../fonts/sin-licencia/g-15-ex.ttf')
+}
+
+@font-face {
+    font-family: 'Habsburg Chancery';
+    src: url('../fonts/sin-licencia/habsburg-chancery.ttf')
+}
+
+@font-face {
+    font-family: 'Kroe 0565';
+    src: url('../fonts/sin-licencia/kroe-0565.ttf')
+}
+
+@font-face {
+    font-family: 'LCD Block';
+    src: url('../fonts/sin-licencia/lcd-block.ttf')
+}
+
+@font-face {
+    font-family: 'Monogram Extended';
+    src: url('../fonts/sin-licencia/monogram-extended.ttf');
+}
+
+@font-face {
+    font-family: 'Mononoki';
+    src: url('../fonts/sin-licencia/mononoki-regular-nerd-font-complete-mono.ttf')
+}
+
+@font-face {
+    font-family: 'Polygon Pixel 5x7 Standard';
+    src: url('../fonts/sin-licencia/polygon-pixel-5x-7-standard.ttf')
+}
+
+@font-face {
+    font-family: 'Rune';
+    src: url('../fonts/sin-licencia/rune.ttf')
+}
+
+/* Fuentes typodermic */
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('../fonts/typodermic-license/joystix-monospace.otf')
+}
+
+@font-face {
+    font-family: 'Neuropolitical';
+    src: url('../fonts/typodermic-license/neuropolitical-rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Orange Kid';
+    src: url('../fonts/typodermic-license/orange-kid.otf');
+}
+
+@font-face {
+    font-family: 'Unispace';
+    src: url('../fonts/typodermic-license/unispace-rg.ttf') format('truetype');
+}
+
+.font-sample {
+    margin-bottom: 20px;
+}
+
+.font-sample h2 {
+    margin-bottom: 10px;
+}
+
+.font-1 {
+    font-family: 'Noto Mono', sans-serif;
+}
+
+.font-2 {
+    font-family: 'Press Start 2P', serif;
+}
+
+.font-3 {
+    font-family: 'Fira Mono', monospace;
+}
+
+.font-4 {
+    font-family: 'Inconsolata', serif;
+}
+
+.font-5 {
+    font-family: 'Liberation Mono', sans-serif;
+}
+
+/*Fuentes  apache*/
+.font-6 {
+    font-family: 'Arimo', sans-serif;
+}
+
+.font-7 {
+    font-family: 'Cousine', serif;
+}
+
+.font-8 {
+    font-family: 'Droid Sans Mono', monospace;
+}
+
+.font-9 {
+    font-family: 'Jet Brains Mono', serif;
+}
+
+.font-10 {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.font-11 {
+    font-family: 'Symbol Neu', monospace;
+}
+
+.font-12 {
+    font-family: 'Tinos', cursive;
+}
+
+.font-13 {
+    font-family: 'Meslo LG L DZ Regular', serif;
+}
+
+.font-14 {
+    font-family: 'Mezlo LG M DZ Regular', sans-serif;
+}
+/*Fuentes CCSA*/
+.font-15 {
+    font-family: '3270 Medium', sans-serif;
+}
+
+.font-16 {
+    font-family: 'Game Over', sans-serif;
+}
+
+/*Fuentes Freeware*/
+.font-17 {
+    font-family: '1942', sans-serif;
+}
+
+.font-18 {
+    font-family: 'Henry Morgan Hand', sans-serif;
+}
+
+.font-19 {
+    font-family: 'Monofur', sans-serif;
+}
+
+.font-20 {
+    font-family: 'Rapscallese', sans-serif;
+}
+
+/*Fuentes manuscritas*/
+.font-21 {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.font-22 {
+    font-family: 'Caveat', serif;
+}
+
+.font-23 {
+    font-family: 'Gloria Hallelujah', monospace;
+}
+
+.font-24 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.font-25 {
+    font-family: 'Kalam', sans-serif;
+}
+
+.font-26 {
+    font-family: 'Patrik Hand', sans-serif;
+}
+
+.font-27 {
+    font-family: 'Sacramento', cursive;
+}
+
+.font-28 {
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+.font-29 {
+    font-family: 'Smooch', sans-serif;
+}
+/* Fuentes MIT */
+
+.font-30 {
+    font-family: 'Agave', sans-serif;
+}
+
+.font-31 {
+    font-family: 'Pro Font', sans-serif;
+}
+
+/* Fuentes sin licencia */
+
+.font-32 {
+    font-family: 'Amputa Bangiz', sans-serif;
+}
+
+.font-33 {
+    font-family: 'At-01 Ex Plus Alpha Mono', sans-serif;
+}
+
+.font-34 {
+    font-family: 'At-01 Ex Plus Alpha', sans-serif;
+}
+
+.font-35 {
+    font-family: 'At-02 Ex Mono', sans-serif;
+}
+
+.font-36 {
+    font-family: 'Ataristocrat', sans-serif;
+}
+
+.font-37 {
+    font-family: 'Bbsesque', sans-serif;
+}
+
+.font-38 {
+    font-family: 'Bit Casual', sans-serif;
+}
+
+.font-39 {
+    font-family: 'Born 2B Sporty V 2', sans-serif;
+}
+
+.font-40 {
+    font-family: 'BTSEPS 2', sans-serif;
+}
+
+.font-41 {
+    font-family: 'Commodore 64 V 6.3', sans-serif;
+}
+
+.font-42 {
+    font-family: 'Commodore Angled V 1.2', sans-serif;
+}
+
+.font-43 {
+    font-family: 'G-15 Ex', sans-serif;
+}
+
+.font-44 {
+    font-family: 'Habsburg Chancery', sans-serif;
+}
+
+.font-45 {
+    font-family: 'Kroe 0565', sans-serif;
+}
+
+.font-46 {
+    font-family: 'LCD Block', sans-serif;
+}
+
+.font-47 {
+    font-family: 'Monogram Extended', sans-serif;
+}
+
+.font-48 {
+    font-family: 'Mononoki', monospace;
+}
+
+.font-49 {
+    font-family: 'Polygon Pixel 5x7 Standard', monospace;
+}
+
+.font-50 {
+    font-family: 'Rune', serif;
+}
+
+/*Fuentes typodermic*/
+.font-51 {
+    font-family: 'Joystix Monospace', sans-serif;
+}
+
+.font-52 {
+    font-family: 'Neuropolitical', sans-serif;
+}
+
+.font-53 {
+    font-family: 'Orange Kid', sans-serif;
+}
+
+.font-54 {
+    font-family: 'Unispace', sans-serif;
+}
+
+#inputText {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}

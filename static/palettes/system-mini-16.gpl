@@ -1,0 +1,20 @@
+GIMP Palette
+#Palette Name: System Mini 16
+#Description: My take on a standard classic computer 16 colour palette. Takes influence from Windows and CGA
+#Colors: 16
+0	0	0	000000
+104	96	92	68605c
+176	176	184	b0b0b8
+252	252	252	fcfcfc
+28	56	172	1c38ac
+112	112	252	7070fc
+168	40	20	a82814
+252	72	72	fc4848
+32	136	0	208800
+112	248	40	70f828
+184	44	208	b82cd0
+252	116	236	fc74ec
+172	88	28	ac581c
+248	168	80	f8a850
+60	212	228	3cd4e4
+248	236	32	f8ec20

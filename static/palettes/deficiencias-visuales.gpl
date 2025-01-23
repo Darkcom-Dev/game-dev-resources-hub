@@ -1,0 +1,22 @@
+GIMP Palette
+Name: Deficiencias_Visuales
+Columns: 0
+#
+  0 178 173	Sin_correcion
+ 14  59  81	sin_correcion
+ 77  79 174	Protanopia
+ 33  34  76	protanopia
+ 33 119 174	Protanomalia
+ 22  44  78	protanomalia
+ 67  53 174	Deuteranopia
+ 31  27  74	deuteranopia
+  0 178 173	Deuteranomalia
+ 14  59  81	deuteranomalia
+  9 175 175	Tritanopia
+ 16  71  71	tritanopia
+  6 177 174	Tritanomalia
+ 15  65  77	tritanomalia
+124 124 124	Acromatopsia
+ 48  48  48	acromatopsia
+ 68 149 146	Acromatomalia
+ 33  53  63	Acromatomalia

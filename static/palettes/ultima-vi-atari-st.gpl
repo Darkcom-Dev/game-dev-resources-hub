@@ -1,0 +1,20 @@
+GIMP Palette
+#Palette Name: Ultima VI Atari ST
+#Description: Palette from the <a target="_blank" href="https://en.wikipedia.org/wiki/Atari_ST">Atari ST</a> version of <a target="_blank" href="https://en.wikipedia.org/wiki/Ultima_VI:_The_False_Prophet">Ultima VI</a>
+#Colors: 16
+240	240	240	f0f0f0
+192	160	160	c0a0a0
+112	96	96	706060
+32	32	32	202020
+0	0	0	000000
+80	240	80	50f050
+0	160	0	00a000
+0	96	0	006000
+80	144	240	5090f0
+0	64	208	0040d0
+16	16	112	101070
+240	208	128	f0d080
+224	80	0	e05000
+208	0	0	d00000
+80	64	32	504020
+208	48	208	d030d0

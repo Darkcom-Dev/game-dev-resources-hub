@@ -1,0 +1,173 @@
+:root {
+  /* Light mode */
+  --background-color: #f0f0f0;
+  --menu-background-color: rgba(150, 100, 255, 0.6);
+  --p-color: #350e7e;
+  --h-color: #665705;
+  --foreground-color: #191529;
+  --input-background-color: rgb(0, 140, 255);
+  --input-foreground-color: #2a0035;
+  --button-hover-background-color: #a300cc;
+  --button-hover-foreground-color: #2f003d;
+  --border-color: #ccc;
+
+  /* Gradient colors */
+  --gradient-color1: rgba(55, 235, 169, 0.85);
+  --gradient-color2: rgb(91, 55, 235);
+
+  /* Shared variables */
+  --blured-color: rgba(48, 48, 64, 0.5);
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode */
+    --background-color: #121212;
+    --menu-background-color: rgba(32, 13, 75, 0.6);
+    --p-color: #bd79eb;
+    --h-color: #f3d00a;
+    --foreground-color: #887cf1;
+    --input-background-color: rgb(29, 7, 48);
+    --input-foreground-color: #00a2ff;
+    --button-hover-background-color: #2a0035;
+    --button-hover-foreground-color: #9c00da;
+    --border-color: #333;
+
+    /* Gradient colors */
+    --gradient-color1: rgba(23, 24, 102, 0.85);
+    --gradient-color2: rgb(91, 55, 235);
+  }
+}
+
+@font-face {
+  font-family: 'Neuropolitical';
+  src: url('../fonts/typodermic-license/neuropolitical-rg.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(55deg, var(--gradient-color1), var(--gradient-color2));
+  color: var(--foreground-color);
+  font-family: 'Neuropolitical', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: var(--button-hover-background-color);
+  color: var(--foreground-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--button-hover-background-color);
+  color: var(--button-hover-foreground-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--h-color);
+  transition: color 0.3s ease;
+}
+
+p {
+  color: var(--p-color);
+  transition: color 0.3s ease;
+}
+
+details {
+  background-color: var(--blured-color);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+textarea {
+  display: flex;
+  width: 80%;
+  border-radius: 20px;
+  background-color: var(--input-background-color);
+  color: var(--input-foreground-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu {
+  background-color: var(--menu-background-color);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a-menu {
+  text-decoration: none;
+  color: var(--foreground-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.a-menu:hover {
+  background-color: var(--button-hover-background-color);
+  color: var(--button-hover-foreground-color);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--input-background-color);
+  color: var(--input-foreground-color);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#myBtn:hover {
+  background-color: var(--button-hover-background-color);
+  color: var(--button-hover-foreground-color);
+}
+
+.gradient {
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 10));
+  background-image: linear-gradient(var(--gradient-color1), var(--gradient-color2));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  z-index: -10;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}

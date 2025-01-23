@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Comparación de Fuentes</title>
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="static/js/scroll_top.js"></script>
+    <div class="gradient"></div>
+    <div class="menu">
+        <a class="a-menu" href="index.html">Inicio</a>
+        <a class="a-menu" href="user-manual.html">User Manual</a>
+        <a class="a-menu" href="palettes.html">Palettes</a>
+        <a class="a-menu" href="palettes-2.html">Palettes 2</a>
+        <a class="a-menu" href="fonts.html">Fonts</a>
+        <!--a id="dark-mode-toggle">Modo Oscuro</a-->
+    </div>
+    <div class="content">
+        <h1>Comparación de Fuentes de Letra</h1>
+
+        <p>Escribe el texto que quieras comparar en las distintas fuentes:</p>
+        <textarea id="inputText" rows="4" placeholder="Escribe aquí tu texto...">Esto es un texto de ejemplo para comparar fuentes.</textarea>
+        <section id="sil">
+        <details>
+            <summary>
+                <h2>Fuentes SIL open font</h2>
+                <p>Permite uso, modificación y distribución, incluso comercialmente. Debes incluir la licencia y no puedes vender la fuente por sí sola. Las obras derivadas deben usar un nombre diferente.</p>
+            </summary>
+            <div class="font-sample font-1">
+                <h2>Fuente: Noto Mono</h2>
+                <p id="output1">Esto es un texto de ejemplo para comparar fuentes.</p>
+            </div>
+        
+            <div class="font-sample font-2">
+                <h2>Fuente: Press Start 2P</h2>
+                <p id="output2">Esto es un texto de ejemplo para comparar fuentes.</p>
+            </div>
+        
+            <div class="font-sample font-3">
+                <h2>Fuente: Fira Mono</h2>
+                <p id="output3">Esto es un texto de ejemplo para comparar fuentes.</p>
+            </div>
+        
+            <div class="font-sample font-4">
+                <h2>Fuente: Inconsolata</h2>
+                <p id="output4">Esto es un texto de ejemplo para comparar fuentes.</p>
+            </div>
+        
+            <div class="font-sample font-5">
+                <h2>Fuente: Liberation Mono</h2>
+                <p id="output5">Esto es un texto de ejemplo para comparar fuentes.</p>
+            </div>
+        </details>
+        </section>
+    
+        <section id="apache">
+            <details>
+                <summary>
+                    <h2>Fuentes Apache</h2>
+                    <p>Permite el uso, modificación y distribución de la fuente, incluso en proyectos comerciales. Debes incluir una copia de la licencia y dar crédito al autor. No puedes usar el nombre del autor para promocionar trabajos derivados sin permiso.</p>
+                </summary>
+                <div class="font-sample font-6">
+                    <h2>Fuente: Arimo</h2>
+                    <p id="output6">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-7">
+                    <h2>Fuente: Cousine</h2>
+                    <p id="output7">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-8">
+                    <h2>Fuente: Droid Sans Mono</h2>
+                    <p id="output8">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-9">
+                    <h2>Fuente: Jet Brains Mono</h2>
+                    <p id="output9">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-10">
+                    <h2>Fuente: Roboto Mono</h2>
+                    <p id="output10">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-11">
+                    <h2>Fuente: Symbol Neu</h2>
+                    <p id="output11">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-12">
+                    <h2>Fuente: Tinos</h2>
+                    <p id="output12">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-13">
+                    <h2>Fuente: Meslo LG L DZ Regular</h2>
+                    <p id="output13">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-14">
+                    <h2>Fuente: Mezlo LG M DZ Regular</h2>
+                    <p id="output14">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="ccsa">
+            <details>
+                <summary>
+                    <h2>Fuentes CCSA</h2>
+                    <p>Permite compartir y adaptar la fuente, incluso comercialmente, siempre que des crédito al autor y licencies las obras derivadas bajo los mismos términos. Es una licencia copyleft que fomenta la colaboración.</p>
+                </summary>
+                <div class="font-sample font-15">
+                    <h2>Fuente: 3270 Medium</h2>
+                    <p id="output15">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-16">
+                    <h2>Fuente: Game Over</h2>
+                    <p id="output16">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="freeware">
+            <details>
+                <summary>
+                    <h2>Fuentes Freeware</h2>
+                    <p>La fuente es gratuita para uso personal y, a veces, comercial, pero no puedes modificarla ni redistribuirla sin permiso. No incluye derechos de autor abiertos, por lo que las restricciones dependen del autor.</p>
+                </summary>
+                <div class="font-sample font-17">
+                    <h2>Fuente: 1942</h2>
+                    <p id="output17">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-18">
+                    <h2>Fuente: Henry Morgan Hand</h2>
+                    <p id="output18">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-19">
+                    <h2>Fuente: Monofur</h2>
+                    <p id="output19">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-20">
+                    <h2>Fuente: Rapscallese</h2>
+                    <p id="output20">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="manuscritas">
+            <details>
+                <summary>
+                    <h2>Fuentes Manuscritas</h2>
+                </summary>
+                <div class="font-sample font-21">
+                    <h2>Fuente: Amatic SC</h2>
+                    <p id="output21">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-22">
+                    <h2>Fuente: Caveat</h2>
+                    <p id="output22">Esto es un texto de ejemplo para comparar fuentes.</p> 
+                </div>
+            
+                <div class="font-sample font-23">
+                    <h2>Fuente: Gloria Hallelujah</h2>
+                    <p id="output23">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-24">
+                    <h2>Fuente: Indie Flower</h2>
+                    <p id="output24">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-25">
+                    <h2>Fuente: Kalam</h2>
+                    <p id="output25">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-26">
+                    <h2>Fuente: Patrik Hand</h2>
+                    <p id="output26">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-27">
+                    <h2>Fuente: Sacramento</h2>
+                    <p id="output27">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-28">
+                    <h2>Fuente: Shadows Into Light</h2>
+                    <p id="output28">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-29">
+                    <h2>Fuente: Smooch</h2>
+                    <p id="output29">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="mit">
+            <details>
+                <summary>
+                    <h2>Fuentes MIT</h2>
+                    <p>Licencia permisiva que permite uso, modificación y distribución, incluso en proyectos comerciales. Solo requiere incluir el aviso de copyright y la licencia en las copias. No impone restricciones adicionales.</p>
+                </summary>
+                <div class="font-sample font-30">
+                    <h2>Fuente: Agave</h2>
+                    <p id="output30">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-31">
+                    <h2>Fuente: Pro Font</h2>
+                    <p id="output31">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="sin-licencia">
+            <details>
+                <summary>
+                    <h2>Fuentes sin licencia</h2>
+                </summary>
+                <div class="font-sample font-32">
+                    <h2>Fuente: Amputa Bangiz</h2>
+                    <p id="output32">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-33">
+                    <h2>Fuente: At-01 Ex Plus Alpha Mono</h2>
+                    <p id="output33">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-34">
+                    <h2>Fuente: At-01 Ex Plus Alpha</h2>
+                    <p id="output34">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-35">
+                    <h2>Fuente: At-02 Ex Mono</h2>
+                    <p id="output35">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-36">
+                    <h2>Fuente: Ataristocrat</h2>
+                    <p id="output36">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-37">
+                    <h2>Fuente: Bbsesque</h2>
+                    <p id="output37">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-38">
+                    <h2>Fuente: Bit Casual</h2>
+                    <p id="output38">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-39">
+                    <h2>Fuente: Born 2B Sporty V 2</h2>
+                    <p id="output39">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-40">
+                    <h2>Fuente: BTSEPS 2</h2>
+                    <p id="output40">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-41">
+                    <h2>Fuente: Commodore 64 V 6.3</h2>
+                    <p id="output41">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-42">
+                    <h2>Fuente: Commodore Angled V 1.2</h2>
+                    <p id="output42">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-43">
+                    <h2>Fuente: G-15 Ex</h2>
+                    <p id="output43">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-44">
+                    <h2>Fuente: Habsburg Chancery</h2>
+                    <p id="output44">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-45">
+                    <h2>Fuente: Kroe 0565</h2>
+                    <p id="output45">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-46">
+                    <h2>Fuente: LCD Block</h2>
+                    <p id="output46">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-47">
+                    <h2>Fuente: Monogram Extended</h2>
+                    <p id="output47">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-48">
+                    <h2>Fuente: Mononoki</h2>
+                    <p id="output48">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+    
+                <div class="font-sample font-49">
+                    <h2>Fuente: Polygon Pixel</h2>
+                    <p id="output49">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+    
+                <div class="font-sample font-50">
+                    <h2>Fuente: Rune</h2>
+                    <p id="output50">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    
+        <section id="typodermic">
+            <details>
+                <summary>
+                    <h2>Fuentes Typodermic</h2>
+                    <p>Licencia específica para fuentes de Typodermic Fonts. Permite uso personal y comercial, pero no redistribución ni modificación sin permiso. Debes comprar una licencia para uso en proyectos comerciales.</p>
+                </summary>
+                <div class="font-sample font-51">
+                    <h2>Fuente: Joystix Monospace</h2>
+                    <p id="output51">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+    
+                <div class="font-sample font-52">
+                    <h2>Fuente: Neuropolitical</h2>
+                    <p id="output52">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-53">
+                    <h2>Fuente: Orange Kid</h2>
+                    <p id="output53">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            
+                <div class="font-sample font-54">
+                    <h2>Fuente: Unispace</h2>
+                    <p id="output54">Esto es un texto de ejemplo para comparar fuentes.</p>
+                </div>
+            </details>
+        </section>
+    </div>
+    <h3>Fuentes de dominio público</h3>
+    <p>La fuente no tiene derechos de autor y puede usarse, modificar y distribuirse libremente sin restricciones. No es necesario dar crédito al autor, aunque es una práctica recomendada.</p>
+
+    <script src="static/js/font_display.js"></script>
+</body>
+</html>

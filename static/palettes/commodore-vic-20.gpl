@@ -1,0 +1,20 @@
+GIMP Palette
+#Palette Name: Commodore VIC-20
+#Description: The <a href="https://en.wikipedia.org/wiki/Commodore_VIC-20">Commodore VIC-20</a> was an 8-bit computer released by Commodore Business Machines in 1980.
+#Colors: 16
+0	0	0	000000
+255	255	255	ffffff
+168	115	74	a8734a
+233	178	135	e9b287
+119	45	38	772d26
+182	104	98	b66862
+133	212	220	85d4dc
+197	255	255	c5ffff
+168	95	180	a85fb4
+233	157	245	e99df5
+85	158	74	559e4a
+146	223	135	92df87
+66	52	139	42348b
+126	112	202	7e70ca
+189	204	113	bdcc71
+255	255	176	ffffb0

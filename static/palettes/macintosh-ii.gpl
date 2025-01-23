@@ -1,0 +1,20 @@
+GIMP Palette
+#Palette Name: Macintosh II
+#Description: The <a href="https://en.m.wikipedia.org/wiki/Macintosh_II">Macintosh II</a> was a personal computer released by Apple in 1987.
+#Colors: 16
+255	255	255	ffffff
+255	255	0	ffff00
+255	101	0	ff6500
+220	0	0	dc0000
+255	0	151	ff0097
+54	0	151	360097
+0	0	202	0000ca
+0	151	255	0097ff
+0	168	0	00a800
+0	101	0	006500
+101	54	0	653600
+151	101	54	976536
+185	185	185	b9b9b9
+134	134	134	868686
+69	69	69	454545
+0	0	0	000000

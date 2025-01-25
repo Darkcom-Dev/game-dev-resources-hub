@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
-    
-    <title>Manual General de Usuario</title>
+    <link rel="shortcut icon" href="static/img/favicon.svg" type="image/x-icon">
+
+    <title>General Manual for 3D Models</title>
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -20,240 +21,259 @@
         <!--a id="dark-mode-toggle">Modo Oscuro</a-->
     </div>
     <div class="content">
-        <h1>Manual General de Usuario</h1>
+        <h1>General Manual for 3D Models</h1>
         <h2>Version 1.0 20/01/2024</h2>
         <h2>Braulio Madrid</h2>
         <ol>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#especificaciones">Especificaciones Técnicas</a></li>
-            <li><a href="#requisitos">Requisitos del Sistema</a></li>
-            <li><a href="#preparacion">Preparación del Entorno</a></li>
-            <li><a href="#instalacion">Instalación del Modelo</a></li>
-            <li><a href="#estructura">Estructura del Modelo</a></li>
-            <li><a href="#optimizacion">Optimización para Juegos Móviles</a></li>
-            <li><a href="#manipulacion">Manipulación y Uso del Modelo</a></li>
-            <li><a href="#problemas">Resolución de Problemas</a></li>
-            <li><a href="#licencia">Licencia y Restricciones</a></li>
-            <li><a href="#faq">Preguntas Frecuentes (FAQ)</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#introduccion">Introduction</a></li>
+            <li><a href="#especificaciones">Technical Specifications</a></li>
+            <li><a href="#requisitos">System Requirements</a></li>
+            <li><a href="#preparacion">Environment Preparation</a></li>
+            <li><a href="#instalacion">Model Installation</a></li>
+            <li><a href="#estructura">Model Structure</a></li>
+            <li><a href="#optimizacion">Optimization for Mobile and VR Games</a></li>
+            <li><a href="#manipulacion">Model Manipulation and Usage</a></li>
+            <li><a href="#problemas">Troubleshooting</a></li>
+            <li><a href="#licencia">License and Restrictions</a></li>
+            <li><a href="#faq">Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#contacto">Contact</a></li>
         </ol>
     
-        <section id="introduccion" class="mb-8">
+        <section id="introduccion" >
             <details>
-                <summary><h2 class="text-2xl font-bold mb-4">Introducción</h2>                   
+                <summary><h2>Introduction</h2>                   
                 </summary>
-                <div class="bg-blue-50 p-4 rounded-lg mb-6">
-                    <p class="font-semibold">Puntos Clave:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Modelos 3D optimizados para máximo rendimiento en dispositivos móviles y VR</li>
-                        <li>Sistema de texture atlas que reduce significativamente el consumo de recursos</li>
-                        <li>Diseñados para mantener alta calidad visual con mínimo impacto en rendimiento</li>
-                        <li>Ideales para juegos que requieren +90 FPS</li>
+                <div>
+                    <p class="font-semibold">Key Points:</p>
+                    <ul>
+                        <li>3D models optimized for <strong>maximum performance on mobile devices and VR.</strong></li>
+                        <li>Texture atlas system that significantly reduces resource consumption.</li>
+                        <li>Designed to maintain high visual quality with minimal performance impact.</li>
+                        <li>Ideal for games requiring 90+ FPS.</li>
                     </ul>
                 </div>
             
-                <div class="space-y-4">
+                <div>
                     <p class="leading-relaxed">
-                        Nuestros productos representan una solución especializada para desarrolladores que buscan equilibrar calidad visual y rendimiento. Cada modelo está meticulosamente optimizado para funcionar de manera eficiente en dispositivos móviles, sistemas VR y equipos con recursos limitados, sin comprometer la calidad visual de su proyecto.
+                        Our products offer a specialized solution for developers seeking to <strong>balance visual quality and performance.</strong>
+ Each model is meticulously optimized to function efficiently on mobile devices, VR
+systems, and low-resource hardware without compromising the visual quality of your project.
                     </p>
-            
-                    <h3 class="text-xl font-semibold mt-6">Sistema de Texture Atlas</h3>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <p class="mb-3">Nuestro sistema de texture atlas ofrece múltiples ventajas:</p>
-                        <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Rendimiento mejorado:</strong> Reducción significativa de draw calls</li>
-                            <li><strong>Eficiencia en memoria:</strong> Optimización del uso de VRAM</li>
-                            <li><strong>Flexibilidad:</strong> Manipulación individual de mallas manteniendo la eficiencia</li>
-                            <li><strong>Simplicidad:</strong> Un único material compartido reduce la complejidad del proyecto</li>
+                    <div>
+                        <h3>Texture Atlas System</h3>
+                        <p>Our texture atlas system provides multiple advantages:</p>
+                        <ul>
+                            <li><strong>Improved Performance:</strong> Significant reduction in draw calls.</li>
+                            <li><strong>Memory Efficiency:</strong> Optimized VRAM usage.</li>
+                            <li><strong>Flexibility:</strong> Individual manipulation of meshes while maintaining efficiency.</li>
+                            <li><strong>Simplicity:</strong> A single shared material reduces project complexity.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Ideal Use Cases</h3>
+                        <ul>
+                            <li><strong>VR/AR:</strong> Applications requiring 90+ FPS for a smooth experience.</li>
+                            <li><strong>Mobile Games:</strong> Projects needing broad compatibility with devices.</li>
+                            <li><strong>E-Sports:</strong> Titles demanding high performance (100+ FPS).</li>
+                            <li><strong>WebGL:</strong> Browser-based 3D applications.</li>
                         </ul>
                     </div>
             
-                    <h3 class="text-xl font-semibold mt-6">Casos de Uso Ideales</h3>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>VR/AR:</strong> Aplicaciones que requieren 90+ FPS para una experiencia fluida</li>
-                            <li><strong>Juegos Móviles:</strong> Proyectos que necesitan amplia compatibilidad con dispositivos</li>
-                            <li><strong>E-Sports:</strong> Títulos que demandan alto rendimiento (+100 FPS)</li>
-                            <li><strong>WebGL:</strong> Aplicaciones 3D para navegador</li>
-                        </ul>
-                    </div>
-            
-                    <div class="bg-yellow-50 p-4 rounded-lg mt-6">
-                        <p class="font-semibold">Nota importante:</p>
-                        <p>Cada producto incluye un manual específico con instrucciones detalladas de implementación y optimización para su caso particular. Este manual general proporciona una visión global de nuestro sistema de modelado y las mejores prácticas para su uso.</p>
+                    <div>
+                        <h4>Important Note:</h4>
+                        <p>Each product includes a specific manual with detailed implementation and optimization instructions for
+                            its particular use case. This general manual provides an overview of our modeling system and best
+                            practices for its use.</p>
                     </div>
                 </div>
             </details>
         </section>
     
-        <section id="especificaciones" class="mb-8">
+        <section id="especificaciones">
             <details>
                 <summary>
-                    <h2 class="text-2xl font-bold mb-4">Especificaciones Técnicas</h2>
+                    <h2>Technical Specifications</h2>
                 </summary>  
-                <div class="space-y-6">
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Formatos y Compatibilidad</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <div>
+                        <h3>Formats and Compatibility</h3>
+                        <div>
                             <div>
-                                <h4 class="font-medium mb-2">Formato Principal</h4>
-                                <ul class="list-disc pl-6">
-                                    <li><strong>.blend:</strong> Editable y compatible con principales motores</li>
+                                <h4>Formato Principal</h4>
+                                <ul>
+                                    <li><strong>.blend:</strong> Editable and compatible with major engines.</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-2">Formatos Adicionales</h4>
-                                <ul class="list-disc pl-6">
-                                    <li><strong>.obj/.gltf:</strong> Optimizados para web</li>
-                                    <li><strong>.fbx:</strong> Compatible con motores principales</li>
+                                <h4>Formatos Adicionales</h4>
+                                <ul>
+                                    <li><strong>.obj/.gltf:</strong> Optimized for web.</li>
+                                    <li><strong>.fbx:</strong> Compatible with major engines.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
             
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Limitaciones Técnicas</h3>
-                        <ul class="list-disc pl-6">
-                            <li>Máximo 5,000 vértices por malla</li>
-                            <li>Límite de 64 mallas por producto</li>
-                            <li>Texturas máximas de 4096×4096 píxeles</li>
-                            <li>Unidades en sistema métrico (metros)</li>
+                    <div>
+                        <h3>Technical Limitations</h3>
+                        <ul>
+                            <li>Maximum 5,000 vertices per mesh.</li>
+                            <li>Limit of 64 meshes per product.</li>
+                            <li>Maximum texture resolution: 4096 × 4096 pixels.</li>
+                            <li>Metric units (meters).</li>
                         </ul>
                     </div>
             
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Sistema de Texturas</h3>
+                    <div>
+                        <h3>Texture System</h3>
                         
-                        <div class="mb-4">
-                            <h4 class="font-medium mb-2">Texturas Base (Obligatorias)</h4>
-                            <ul class="list-disc pl-6">
-                                <li><strong>Albedo:</strong> Color base y opacidad</li>
-                                <li><strong>Normal:</strong> Información de relieve</li>
-                                <li><strong>Roughness:</strong> Rugosidad de superficie</li>
-                            </ul>
-                        </div>
+                        <table>
+                            <tr>
+                                <th>Base Textures (Mandatory)</th>
+                                <th>Additional Textures (Optional)</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Albedo:</strong> Base color and opacity.</td>
+                                <td><strong>AO:</strong> Ambient occlusion.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Normal:</strong> Relief information.</td>
+                                <td><strong>Specular:</strong> Reflections (grayscale).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Roughness:</strong> Surface roughness.</td>
+                                <td><strong>Translucency:</strong> Translucency (grayscale).</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><strong>Self-Illumination:</strong> Self-illumination.</td>
+                            </tr>
+                        </table>
+                        
             
-                        <div class="mb-4">
-                            <h4 class="font-medium mb-2">Texturas Adicionales (Opcionales)</h4>
-                            <ul class="list-disc pl-6">
-                                <li><strong>AO:</strong> Oclusión ambiental</li>
-                                <li><strong>Specular:</strong> Reflexiones (escala de grises)</li>
-                                <li><strong>Translucency:</strong> Translucidez (escala de grises)</li>
-                                <li><strong>Self-Illumination:</strong> Auto-iluminación</li>
-                            </ul>
-                        </div>
+                        
                     </div>
             
-                    <div class="bg-yellow-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Optimización de Texturas</h3>
-                        <ul class="list-disc pl-6">
-                            <li><strong>Formato:</strong> PNG con soporte alfa</li>
-                            <li><strong>Dimensiones:</strong> 1024², 2048², 4096²</li>
-                            <li><strong>Canales combinados:</strong> Formato r-rough-b-ao para optimización</li>
-                            <li><strong>Compresión recomendada:</strong> ASTC (principal), ETC2 (alternativa)</li>
+                    <div>
+                        <h3>Texture Optimization</h3>
+                        <ul>
+                            <li><strong>Format:</strong> PNG with alpha support.</li>
+                            <li><strong>Dimensions:</strong> 1024², 2048², 4096²</li>
+                            <li><strong>Combined Channels:</strong> r-rough-b-ao format for optimization.</li>
+                            <li><strong>Recommended Compression:</strong> ASTC (primary), ETC2 (alternative).</li>
                         </ul>
                     </div>
             
-                    <div class="bg-green-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Compatibilidad con Motores</h3>
-                        <ul class="list-disc pl-6">
+                    <div>
+                        <h3>Engine Compatibility</h3>
+                        <ul>
                             <li>Unity 2018+</li>
                             <li>Unreal Engine 4+</li>
                             <li>Godot 4+</li>
-                            <li>Requisito API: OpenGL 3+ o Vulkan</li>
+                            <li>API Requirement: OpenGL 3+ or Vulkan</li>
                         </ul>
                     </div>
                 </div>
             </details>
         </section>
     
-        <section id="requisitos" class="mb-8">
+        <section id="requisitos" >
             <details>
                 <summary>
-                    <h2 class="text-2xl font-bold mb-4">Requisitos del Sistema</h2>
+                    <h2 >System Requirements</h2>
                 </summary>
-                <div class="space-y-6">
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Hardware Mínimo</h3>
+                <div >
+                    <div >
+                        <h3>Minimum Hardware</h3>
+                        <table>
+                            <tr>
+                                <th>Component</th>
+                                <th>Development</th>
+                                <th>Final Device</th>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td>4 cores</td>
+                                <td>2 cores</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>8GB</td>
+                                <td>2GB</td>
+                            </tr>
+                            <tr>
+                                <td>GPU</td>
+                                <td>2GB VRAM</td>
+                                <td>1GB VRAM</td>
+                            </tr>
+                            <tr>
+                                <td>Storage</td>
+                                <td>1GB</td>
+                                <td>1GB</td>
+                            </tr>
+                            <tr>
+                                <td>API</td>
+                                <td>OpenGL 3.0+</td>
+                                <td>Vulkan</td>
+                            </tr>
+                        </table>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <h4 class="font-medium mb-2">Desarrollo</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>CPU: 4 núcleos (6+ recomendado)</li>
-                                    <li>RAM: 8GB mínimo</li>
-                                    <li>GPU: 2GB VRAM mínimo</li>
-                                    <li>Almacenamiento: 1GB disponible</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-2">Dispositivo Final</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>CPU: 2 núcleos</li>
-                                    <li>RAM: 2GB mínimo</li>
-                                    <li>GPU: 1GB VRAM</li>
-                                    <li>OpenGL 3.0+ o Vulkan</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
             
                     <div class="bg-gray-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Software Compatible</h3>
+                        <h3>Compatible Software</h3>
+                        <table>
+                            <tr>
+                                <th>Modeling</th>
+                                <th>Engines</th>
+                            </tr>
+                            <tr>
+                                <td>Blender 2.8+</td>
+                                <td>Unity 2018+</td>
+                            </tr>
+                            <tr>
+                                <td>Maya 2018+</td>
+                                <td>Unreal Engine 4+</td>
+                            </tr>
+                            <tr>
+                                <td>3ds Max 2018+</td>
+                                <td>Godot 4+</td>
+                            </tr>
+                        </table>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <h4 class="font-medium mb-2">Modelado</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>Blender 2.8+</li>
-                                    <li>Maya 2018+</li>
-                                    <li>3ds Max 2018+</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-2">Motores</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>Unity 2018+</li>
-                                    <li>Unreal Engine 4+</li>
-                                    <li>Godot 4+</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
             
                     <div class="bg-yellow-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Requisitos Específicos por Plataforma</h3>
+                        <h3>Platform specific Requirements</h3>
+                        <table>
+                            <tr>
+                                <th>Android</th>
+                                <th>iOS</th>
+                                <th>VR</th>
+                            </tr>
+                            <tr>
+                                <td>7.0+</td>
+                                <td>11.0+</td>
+                                <td><strong>Oculus Quest:</strong> Android API 29+</td>
+                            </tr>
+                            <tr>
+                                <td>OpenGL ES 3.0+</td>
+                                <td>Metal 2.0+</td>
+                                <td><strong>Meta Quest:</strong> OpenXR 1.0+</td>
+                            </tr>
+                            <tr>
+                                <td>Vulkan 1.0+</td>
+                                <td></td>
+                                <td><strong>PSVR:</strong> PS4/PS5 dev kit</td>
+                            </tr>
+                        </table>
                         
-                        <div class="grid grid-cols-1 gap-4">
-                            <div>
-                                <h4 class="font-medium mb-2">Android</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>Android 7.0+</li>
-                                    <li>OpenGL ES 3.0+</li>
-                                    <li>Vulkan 1.0+ (recomendado)</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-2">iOS</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>iOS 11+</li>
-                                    <li>Metal 2.0+</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-2">VR</h4>
-                                <ul class="list-disc pl-6">
-                                    <li>Oculus Quest: Android API 29+</li>
-                                    <li>Meta Quest: OpenXR 1.0+</li>
-                                    <li>PSVR: PS4/PS5 dev kit</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
             
-                    <div class="bg-green-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3">Rendimiento Recomendado</h3>
-                        <ul class="list-disc pl-6">
+                    <div>
+                        <h3>Rendimiento Recomendado</h3>
+                        <ul>
                             <li><strong>Móvil:</strong> 30-60 FPS estables</li>
                             <li><strong>VR:</strong> 90+ FPS mínimo</li>
                             <li><strong>E-Sports:</strong> 100+ FPS</li>
@@ -266,36 +286,50 @@
     
         <section id="preparacion">
             <details>
-                <summary><h2>Preparación del Entorno</h2></summary> 
-                <h3>Instalación de Software Requerido</h3>
+                <summary><h2>Environment Setup</h2></summary> 
+                <h3>Required Software Installation</h3>
             <p>
-                El producto no requiere instalaciones adicionales, siempre que se cumplan los requisitos mínimos del software especificado en la documentación. Asegúrese de utilizar versiones compatibles para evitar problemas de compatibilidad.
+                The product does not require additional installations as long as the minimum software requirements
+                specified in the documentation are met. Ensure compatible versions are used to avoid compatibility
+                issues.
             </p>
         
-            <h3>Configuración del Motor</h3>
+            <h3>Engine Configuration</h3>
             <p>
-                Aunque el motor puede renderizar los modelos sin configuraciones especiales, los desarrolladores de videojuegos móviles deberían considerar las siguientes recomendaciones para optimizar el rendimiento.
+                While the engine can render models without special configurations, mobile game developers should
+                consider the following recommendations to optimize performance.
             </p>
         
-            <h4>Limitaciones de Resolución</h4>
+            <h4>Resolution Limitations</h4>
             <p>
-                Este producto está optimizado para resoluciones de <strong>1080p o inferiores</strong>. No se recomienda su uso en pantallas 4K o 8K debido al impacto en el rendimiento, a menos que la cámara del juego esté alejada, como en juegos de estrategia en tiempo real (RTS).
+                This product is optimized for resolutions of <strong>1080p or lower.</strong> It is not recommended for use on 
+                <strong>4K or 8K displays</strong> due to the performance impact unless the game camera is distant, such as in real-time
+                strategy (RTS) games.
             </p>
         
-            <h3>Optimizaciones Gráficas</h3>
+            <h3>Graphic Optimizations</h3>
             <p>
-                Se sugieren las siguientes optimizaciones gráficas opcionales para maximizar la eficiencia sin sacrificar calidad visual:
+                The following optional graphical optimizations are suggested to maximize efficiency without
+                sacrificing visual quality:
             </p>
-            <ul class="list-disc pl-6">
-                <li><strong>Shaders personalizados:</strong> Diseñe shaders para combinar texturas en escala de grises como <em>Roughness</em>, <em>Ambient Occlusion</em> (AO) o <em>Translucency</em>. Esto permite reducir la cantidad de texturas individuales y optimiza el uso de memoria.</li>
-                <li><strong>Fusión de texturas:</strong> Para proyectos donde el rendimiento es crítico, considere fusionar AO con Albedo mediante multiplicación de color o almacenar Roughness en el canal Alpha. Esto puede requerir hornear texturas o realizar ajustes irreversibles.</li>
-                <li><strong>Postprocesado:</strong> Utilice efectos como SSAO (Screen Space Ambient Occlusion) para mejorar la iluminación sin depender de texturas AO. Agregar un efecto Bloom también puede mejorar el realismo.</li>
-                <li><strong>Shaders compactos:</strong> Si domina la programación de shaders, combine múltiples efectos en un único pase para reducir la carga gráfica.</li>
+            <ul>
+                <li><strong>Custom Shaders:</strong> Design shaders to combine grayscale textures such as Roughness, Ambient
+                    Occlusion (AO), or Translucency. This reduces the number of individual textures and optimizes
+                    memory usage.</li>
+                <li><strong>Texture Compression:</strong> For performance-critical projects, consider merging AO with Albedo via
+                    color multiplication or storing Roughness in the Alpha channel. This may require baking
+                    textures or making irreversible adjustments.</li>
+                <li><strong>Post-Processing:</strong> Use effects like SSAO (Screen Space Ambient Occlusion) to enhance lighting
+                    without relying on AO textures. Adding a Bloom effect can also improve realism.</li>
+                <li><strong>Shader Optimization:</strong> If skilled in shader programming, combine multiple effects into a single
+                    pass to reduce graphical load.</li>
             </ul>
         
-            <h3>Formatos de Compresión</h3>
+            <h3>Compression Formats</h3>
             <p>
-                Para las texturas, el formato de compresión recomendado es <strong>ASTC</strong>, ya que ofrece una alta calidad y compatibilidad en dispositivos modernos. Si el dispositivo de destino presenta problemas o glitches, cambie al formato <strong>ETC2</strong> como alternativa.
+                For textures, the recommended compression format is <strong>ASTC</strong>, as it provides high quality and
+                compatibility with modern devices. If the target device encounters issues or glitches, switch to <strong>ETC2</strong>
+                as an alternative.
             </p>
             </details>
         </section>
@@ -303,38 +337,43 @@
         <section id="instalacion">
             <details>
                 <summary>
-                    <h2>Instalación del Modelo</h2>
+                    <h2>Model Installation</h2>
                 </summary>
-                <h3>Guía de Instalación del Modelo</h3>
+                <h3>Model Installation Guide</h3>
                 <p>
-                    La mayoría de los motores de videojuegos son compatibles con archivos provenientes de Blender. Sin embargo, algunos motores interpretan la orientación de los ejes de manera diferente. 
-                    Por defecto, todos los modelos están configurados para que el eje <strong>Z</strong> apunte hacia arriba, pero en ciertos motores, como Unity, el eje <strong>Y</strong> es el que apunta hacia arriba. 
-                    Para solucionar este desajuste, puede:
+                    Most game engines are compatible with files exported from Blender. However, some engines interpret
+axis orientation differently. By default, all models are configured with the <strong>Z-axis pointing up</strong>, but in
+certain engines, such as Unity, the <strong>Y-axis points up.</strong> To address this discrepancy, you can:
                 </p>
-                <ul class="list-disc pl-6">
-                    <li>Rotar los modelos 90° sobre el eje Y en Blender antes de exportarlos.</li>
-                    <li>Utilizar formatos como <strong>.glb</strong> o <strong>.fbx</strong>, que generalmente ajustan esta discrepancia automáticamente.</li>
+                <ul>
+                    <li>Rotate the models <strong>90° on the Y-axis</strong> in Blender before exporting.</li>
+                    <li>Use formats such as <strong>.glb or .fbx</strong>, which generally adjust this mismatch automatically.</li>
                 </ul>
             
-                <h3>Configuración de Materiales</h3>
+                <h3>Material Setup</h3>
                 <p>
-                    Aunque los motores son compatibles con Blender, es habitual que la fidelidad de los materiales se vea afectada al importar. La mayoría de los motores asignan un material PBR (Physically Based Rendering) por defecto y ubican las texturas de manera aproximada. 
-                    Tenga en cuenta lo siguiente para optimizar los materiales:
+                    Although engines are compatible with Blender, the fidelity of materials is often affected during import.
+Most engines assign a default <strong>PBR (Physically Based Rendering)</strong> material and approximately map
+the textures. To optimize materials:
                 </p>
-                <ul class="list-disc pl-6">
-                    <li>La textura <strong>r-rough-b-ao.png</strong> combina información de rugosidad en el canal rojo (<em>Roughness</em>) y oclusión ambiental en el canal azul (<em>Ambient Occlusion</em>).</li>
-                    <li>Es probable que deba configurar un shader personalizado para que interprete correctamente estos datos.</li>
-                    <li>El paquete de archivos adicionales incluye un shader <strong>GLSL</strong> compatible, que puede servir como base para diseñar un shader personalizado en su motor de preferencia.</li>
+                <ul>
+                    <li>The texture <em>r-rough-b-ao.png</em> combines roughness information in the red channel <em>(Roughness)</em>
+                        and ambient occlusion in the blue channel <em>(Ambient Occlusion)</em>.</li>
+                    <li>You may need to configure a <em>custom shader</em> to correctly interpret these data.</li>
+                    <li>The additional files package includes a <em>GLSL shader</em> compatible with Blender, which can
+                        serve as a base for designing a custom shader in your preferred engine.</li>
                 </ul>
             
-                <h3>Configuración del Texture Atlas</h3>
+                <h3>Texture Atlas Setup</h3>
                 <p>
-                    Algunos motores, como Unreal Engine, permiten combinar múltiples texturas para crear un <strong>Texture Atlas</strong> de gran tamaño, de hasta 8192x8192 píxeles. 
-                    Si su motor admite esta función, puede aprovecharla para gestionar las texturas de manera más eficiente. Sin embargo:
+                    Some engines, such as Unreal Engine, allow combining multiple textures into a <em>large Texture Atlas</em> of
+                    up to <em>8192x8192 pixels.</em> If your engine supports this feature, you can use it to manage textures more
+                    efficiently. However:
                 </p>
-                <ul class="list-disc pl-6">
-                    <li>La mayoría de los motores no soportan automáticamente esta característica, lo cual podría requerir trabajo manual.</li>
-                    <li>Los modelos ya están diseñados con un Texture Atlas optimizado, por lo que no será necesario realizar configuraciones adicionales en la mayoría de los casos.</li>
+                <ul>
+                    <li>Most engines do not support this feature automatically, which may require manual adjustments.</li>
+                    <li>The models are already designed with an optimized Texture Atlas, so additional configuration is
+                        generally unnecessary.</li>
                 </ul>
             </details>
         </section>
@@ -342,32 +381,39 @@
         <section id="estructura">
             <details>
                 <summary>
-                    <h2>Estructura del Modelo</h2>
+                    <h2>Model Structure</h2>
                 </summary>
-                    <h3>Jerarquía del Modelo</h3>
+                    <h3>Model Hierarchy</h3>
                     <p>
-                        Cada producto se entrega como un único archivo en un formato específico (<strong>.blend</strong>, <strong>.fbx</strong>, <strong>.obj</strong>, <strong>.glb</strong>, etc.), que contiene varias mallas optimizadas. Estas mallas comparten una sola textura para garantizar eficiencia y compatibilidad. Las características principales incluyen:
+                        Each product is delivered as a single file in a specific format <em>(.blend, .fbx, .obj, .glb, etc.)</em>, containing
+                        multiple optimized meshes. These meshes share a single texture to ensure efficiency and compatibility.
+                        Key features include:
                     </p>
-                    <ul class="list-disc pl-6">
-                        <li><strong>Escala uniforme:</strong> Todas las mallas tienen una escala de 1.0 en cada eje.</li>
-                        <li><strong>Rotación estándar:</strong> Las rotaciones están configuradas en 0.0 para evitar inconsistencias al importar.</li>
-                        <li><strong>Unidades métricas:</strong> Los modelos están configurados en metros para alinearse con el Sistema Internacional de Unidades (SI).</li>
+                    <ul>
+                        <li><em>Uniform Scale:</em> All meshes have a scale of <em>1.0</em> on each axis.</li>
+                        <li><em>Standard Rotation:</em> Rotations are set to <em>0.0</em> to prevent inconsistencies during import.</li>
+                        <li><em>Metric Units:</em> Models are configured in meters to align with the International System of Units (SI).</li>
                     </ul>
                     <p>
-                        Si el modelo está diseñado para incluir animaciones, las partes móviles se separan de las partes estáticas para facilitar la manipulación. En la mayoría de los casos, los productos no incluyen huesos o animaciones preconfiguradas, salvo que estén explícitamente diseñados para ello. Para más detalles, consulte el manual específico del modelo.
+                        If the model is designed to include animations, movable parts are separated from static parts to simplify
+                        manipulation. Most products do not include preconfigured bones or animations unless explicitly
+                        specified. For further details, consult the model-specific manual.
                     </p>
                 
-                    <h3>Uso del Texture Atlas</h3>
+                    <h3>Texture Atlas Usage</h3>
                     <p>
-                        Las mallas utilizan un <strong>Texture Atlas</strong> optimizado para maximizar el uso del área de textura y minimizar la carga gráfica. 
-                        Los mapas UV están configurados con las siguientes características:
+                        Meshes utilize an <em>optimized Texture Atlas</em> to maximize texture area usage and minimize graphical
+load. The UV maps are configured with the following features:
                     </p>
-                    <ul class="list-disc pl-6">
-                        <li><strong>Distribución eficiente:</strong> Las islas UV están proporcionadas según el tamaño del modelo, garantizando una resolución uniforme en todas las mallas.</li>
-                        <li><strong>Mínimo estiramiento:</strong> Los cortes en el mapa UV están diseñados para capturar el máximo detalle sin distorsiones perceptibles.</li>
+                    <ul>
+                        <li><em>Efficient Distribution:</em> UV islands are proportioned to match the model size, ensuring uniform
+                            resolution across all meshes.</li>
+                        <li><em>Minimal Stretching:</em> UV cuts are designed to capture maximum detail without noticeable
+                            distortions.</li>
                     </ul>
                     <p>
-                        Sin embargo, este enfoque tiene una limitación: separar las mallas para aplicar texturas individuales puede ser complicado. En estos casos, puede ser necesario hornear las texturas en un nuevo mapa UV
+                        his approach, however, has a limitation: separating meshes to apply individual textures can be
+                        challenging. In such cases, you may need to <em>bake textures into a new UV map.</em>
                     </p>
             </details>
         </section>
@@ -426,7 +472,7 @@
                     Sin embargo, algunos modelos pueden incluir características adicionales, como datos almacenados en los <strong>colores de los vértices</strong>. 
                     Cuando esto ocurra, se proporcionará en los archivos adicionales:
                 </p>
-                <ul class="list-disc pl-6">
+                <ul>
                     <li>Ejemplos de uso mediante scripts específicos.</li>
                     <li>Shaders que aprovechan características como el movimiento por viento basado en colores de vértices.</li>
                     <li>Enlaces a demostraciones web para ilustrar su funcionalidad.</li>
@@ -491,9 +537,9 @@
     <h2>Preguntas Frecuentes (FAQ)</h2>
         </summary>
             <!-- Contenido de la sección -->
-            <h2 class="text-2xl font-bold mb-4">Preguntas Frecuentes (FAQ)</h2>
+            <h2 >Preguntas Frecuentes (FAQ)</h2>
 
-            <div class="space-y-6">
+            <div >
                 <div class="faq-item">
                     <h3 class="text-lg font-semibold text-blue-800">¿Por qué los modelos usan un texture atlas en lugar de texturas individuales?</h3>
                     <p class="mt-2">El texture atlas reduce significativamente los draw calls y optimiza el uso de memoria GPU. Esto mejora el rendimiento en dispositivos móviles y VR, permitiendo mantener altos FPS sin sacrificar la calidad visual.</p>

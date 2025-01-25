@@ -10,7 +10,7 @@
   --input-foreground-color: #2a0035;
   --button-hover-background-color: #a300cc;
   --button-hover-foreground-color: #2f003d;
-  --border-color: #ccc;
+  --border-color: #333;
 
   /* Gradient colors */
   --gradient-color1: rgba(55, 235, 169, 0.85);
@@ -36,7 +36,7 @@
     --input-foreground-color: #00a2ff;
     --button-hover-background-color: #2a0035;
     --button-hover-foreground-color: #9c00da;
-    --border-color: #333;
+    --border-color: #ccc;
 
     /* Gradient colors */
     --gradient-color1: rgba(23, 24, 102, 0.85);
@@ -103,6 +103,21 @@ textarea {
   background-color: var(--input-background-color);
   color: var(--input-foreground-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table {
+  background-color: var(--blured-color);
+  border-radius: 10px;
+  border-color: var(--border-color);
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  background-color: var(--blured-color);
+  border-radius: 5px;
 }
 
 .menu {

@@ -272,12 +272,12 @@ systems, and low-resource hardware without compromising the visual quality of yo
                     </div>
             
                     <div>
-                        <h3>Rendimiento Recomendado</h3>
+                        <h3>Recomended Performance</h3>
                         <ul>
-                            <li><strong>Móvil:</strong> 30-60 FPS estables</li>
-                            <li><strong>VR:</strong> 90+ FPS mínimo</li>
+                            <li><strong>Mobile:</strong> Stable 30-60 FPS.</li>
+                            <li><strong>VR:</strong> Minimum 90+ FPS.</li>
                             <li><strong>E-Sports:</strong> 100+ FPS</li>
-                            <li><strong>Web:</strong> 30+ FPS en navegadores modernos</li>
+                            <li><strong>Web:</strong> 30+ FPS in modern browsers</li>
                         </ul>
                     </div>
                 </div>
@@ -420,28 +420,32 @@ load. The UV maps are configured with the following features:
         <section id="optimizacion">
             <details>
                 <summary>
-                    <h2>Optimización para Juegos Móviles</h2>
+                    <h2>Mobile Game Optimization</h2>
                 </summary>
-                <h3>Consejos para Reducir el Impacto en el Rendimiento</h3>
+                <h3>Tips to Reduce Performance Impact</h3>
                 <p>
-                    Para optimizar el rendimiento en dispositivos móviles, se recomienda comprimir las texturas utilizando el formato <strong>ASTC</strong>, siempre que el dispositivo de destino sea compatible. 
-                    En caso de incompatibilidad, opte por <strong>ETC2</strong> como alternativa. 
-                    Todos los productos están diseñados con un límite máximo de 5000 vértices por modelo para garantizar una carga gráfica eficiente. 
-                    Aunque es posible reducir aún más la cantidad de polígonos, hacerlo podría comprometer la calidad visual de la malla.
+                    To optimize performance on mobile devices, compress textures using the <strong>ASTC</strong> format whenever the
+                    target device supports it. If incompatible, use <strong>ETC2</strong> as an alternative. All products are designed with a
+                    <strong>maximum of 5,000 vertices per model</strong> to ensure efficient graphical load. While reducing polygon
+                    count further is possible, doing so may compromise the mesh's visual quality.
                 </p>
             
-                <h3>Configuración de Modelos de Detalle (LOD)</h3>
+                <h3>Level of Detail (LOD) Configuration</h3>
                 <p>
-                    En la mayoría de los casos, los modelos no están configurados con niveles de detalle (LOD, por sus siglas en inglés). Si decide implementarlos, la mejora de rendimiento puede ser marginal dependiendo del proyecto. 
-                    Una alternativa eficiente es utilizar un shader basado en <strong>tesselación</strong> para suavizar los bordes según sea necesario, optimizando tanto la calidad visual como el rendimiento.
+                    Most models are not pre-configured with Levels of Detail <em>(LOD)</em>. If you decide to implement them,
+                    performance improvements may be marginal depending on the project. A more efficient alternative is
+                    using a <em>tessellation-based shader</em> to smooth edges dynamically, optimizing both visual quality and
+                    performance.
                 </p>
             
-                <h3>Iluminación y Sombras</h3>
+                <h3>Lighting and Shadows</h3>
                 <p>
-                    Para proyectos con ciclos de día y noche o iluminación dinámica, se recomienda implementar shaders que calculen la iluminación a nivel de vértices y manejen sombras con un sesgo mínimo o sin sesgo. Esto reduce la carga computacional de la GPU.
+                    For projects with dynamic lighting, such as day-night cycles, implement shaders that calculate lighting
+                    at the <strong>vertex level</strong> and manage shadows with minimal or no bias. This reduces GPU computational load.
                 </p>
                 <p>
-                    Si el proyecto utiliza iluminación estática, aproveche el horneado de sombras y normales en los objetos estáticos. Esto mejora significativamente el rendimiento al eliminar cálculos de iluminación en tiempo real.
+                    For static lighting projects, take advantage of <strong>baked shadows and normals</strong> on static objects. This
+                    significantly improves performance by eliminating real-time lighting calculations.
                 </p>
             </details>
         </section>
@@ -449,33 +453,36 @@ load. The UV maps are configured with the following features:
         <section id="manipulacion">
             <details>
                 <summary>
-                <h2>Manipulación y Uso del Modelo</h2>
+                <h2>Model Handling and Usage</h2>
                 </summary>
-                <h3>Posicionamiento de Objetos</h3>
+                <h3>Object Positioning</h3>
                 <p>
-                    Las mallas están diseñadas con el pivote ubicado en la base del modelo para facilitar su posicionamiento sobre superficies planas. 
-                    En el caso de objetos irregulares que puedan ser lanzados o manipulados físicamente, el pivote se encuentra en su <strong>centro de masa</strong>. 
-                    Esto garantiza una manipulación más intuitiva en el motor de juego.
+                    Meshes are designed with the pivot located at the <em>base of the model</em> to facilitate placement on flat
+                    surfaces. For irregular objects that may be thrown or physically manipulated, the pivot is positioned at
+                    their <em>center of mass</em> to ensure more intuitive handling within the game engine.
                 </p>
                 <p>
-                    Además, las mallas están configuradas con dimensiones estandarizadas y proporcionales a los objetos reales, evitando la necesidad de realizar ajustes de escala en la mayoría de los casos. Esta modularidad simplifica su integración en diferentes escenarios.
-                </p>
-            
-                <h3>Aplicación de Animaciones</h3>
-                <p>
-                    Por defecto, la mayoría de los modelos no incluye animaciones predefinidas. En los casos en los que el modelo cuente con animaciones, encontrará instrucciones detalladas en el manual específico incluido con el producto.
+                    Additionally, meshes are configured with <em>standardized dimensions</em> proportional to real-world objects,
+                    reducing the need for scaling adjustments in most cases. This modularity simplifies integration into
+                    various scenarios.
                 </p>
             
-                <h3>Interacción con Scripts y Físicas del Motor</h3>
+                <h3>Animation Application</h3>
                 <p>
-                    La mayoría de los modelos están diseñados como objetos estáticos, libres de jerarquías complejas, lo que simplifica su interacción con sistemas de físicas y scripts en el motor de juego. 
-                    Sin embargo, algunos modelos pueden incluir características adicionales, como datos almacenados en los <strong>colores de los vértices</strong>. 
-                    Cuando esto ocurra, se proporcionará en los archivos adicionales:
+                    By default, most models do not include predefined animations. If animations are available, detailed
+                    instructions are provided in the <em>product-specific manual</em> included with the package.
+                </p>
+            
+                <h3>Interaction with Engine Scripts and Physics</h3>
+                <p>
+                    Most models are designed as <strong>static objects</strong> with no complex hierarchies, simplifying interaction with
+                    physics systems and game scripts. However, some models may feature additional functionalities, such
+                    as data stored in <strong>vertex colors</strong>. In such cases, additional files will be included to support these features:
                 </p>
                 <ul>
-                    <li>Ejemplos de uso mediante scripts específicos.</li>
-                    <li>Shaders que aprovechan características como el movimiento por viento basado en colores de vértices.</li>
-                    <li>Enlaces a demostraciones web para ilustrar su funcionalidad.</li>
+                    <li><em>Examples of use</em> through specific scripts.</li>
+                    <li><em>Shaders</em> leveraging features like wind-based movement using vertex colors.</li>
+                    <li><em>Links to web demonstrations</em> illustrating their functionality.</li>
                 </ul>
             </details>
         </section>
@@ -483,26 +490,28 @@ load. The UV maps are configured with the following features:
     <section id="problemas">
         <details>
             <summary>
-                <h2>Resolución de Problemas</h2>
+                <h2>Troubleshooting</h2>
             </summary>
             <!-- Contenido de la sección -->
-                <p>
+                <!--p>
                    Los productos estan diseñados para evitar la mayor cantidad de problemas posible, pero si se presenta algun problema puede seguir esta guia rapida:
-                </p>
-                <h3>UVs mal asignadas</h3>
+                </p-->
+                <h3>Misaligned Uvs</h3>
                 <p>
-                   Si ese es el caso, habra Blender y en el apartado de mallas, observe cuantos mapas UV contiene, puede que por error se haya pasado mas de un mapa UV,
-                   simplemente elimine el que no funciona. sin embargo las tiendas revisan previamente que el contenido funcione correctamente antes de publicarse.
+                    If UVs are not properly assigned, open Blender and check the number of UV maps in the mesh section.
+                    It is possible that more than one UV map was mistakenly included. Simply delete the one that doesn't
+                    work. Note that stores typically review the content to ensure functionality before publication.
                 </p>
-                <h3>Texturas no se muestran correctamente</h3>
+                <h3>Textures Not Displaying Correctly</h3>
                 <p>
-                   Las texturas por defecto se encuentran en el mismo nivel que el archivo  principal, puede que usted accidentalmente haya movido el archivo a otra ubicacion.
-                   para solucionarlo, simplemente reasigne las texturas en esa nueva ubicacion dentro del material.
+                   Default textures are located in the same directory as the main file. If the file was accidentally moved to
+                   a different location, reassign the textures to their new location within the material settings.
                 </p>
-                <h3>Perdida de calidad en compresion</h3>
+                <h3>Compression Quality Loss</h3>
                 <p>
-                   Los productos tienen sus texturas en formato PNG sin compresion con el fin que el usuario haga uso de la compresion segun sus necesidades,
-                   pero en caso de tener problemas de compresion, haga uso de algun formato que permita la compresion sin perdida de calidad y busque valores razonables para la compresion.
+                    The product textures are provided in uncompressed <em>PNG format</em> so users can apply compression based
+                    on their needs. If compression issues occur, use a format that supports lossless compression and ensure
+                    reasonable compression values to maintain quality.
                 </p>
         </details>
     </section>
@@ -510,23 +519,24 @@ load. The UV maps are configured with the following features:
     <section id="licencia">
     <details>
         <summary>
-            <h2>Licencia y Restricciones</h2>
+            <h2>License and Restrictions</h2>
         </summary>
-            <!-- Contenido de la sección -->
-            La licencia **Standard** de Fab.com implica que los compradores tienen los siguientes derechos y limitaciones sobre los productos adquiridos:
-
-            <h1>Licencia Standard de Fab.com</h1>
-            <h2>Derechos:</h2>
+            <!-- La licencia **Standard** de Fab.com implica que los compradores tienen los siguientes derechos y limitaciones sobre los productos adquiridos: -->
+            <h3>Standard Fab.com License</h3>
+            <h4>Rights:</h4>
             <ul>
-            <li><strong>Uso personal:</strong> Los productos pueden ser usados para fines personales, no comerciales. Esto incluye su uso en el hogar o en proyectos privados.</li>
-            <li><strong>Acceso digital:</strong> Si el producto incluye contenido digital (como archivos descargables), el comprador puede descargar y utilizar dicho contenido según lo estipulado en los términos.</li>
-            <li><strong>Propiedad del artículo físico:</strong> Si el producto es físico, el comprador es dueño de ese artículo, pero no de los derechos de autor o diseño.</li>
+            <li>Personal Use: Products may be used for personal, non-commercial purposes. This includes use at
+                home or in private projects.</li>
+            <li>Digital Access: If the product includes digital content (such as downloadable files), the purchaser
+                may download and use such content as stipulated in the terms.</li>
+            <li>Ownership of Physical Item: If the product is physical, the purchaser owns that item but not the
+                copyright or design rights.</li>
             </ul>
-            <h2>Limitaciones:</h2>
+            <h4>Limitations:</h4>
             <ul>
-            <li><strong>Prohibición de reventa comercial:</strong> Los productos no pueden ser revendidos con fines comerciales sin autorización previa.</li>
-            <li><strong>No modificación o reproducción:</strong> No se permite modificar, copiar o reproducir el diseño del producto o su contenido digital para distribuirlo o usarlo comercialmente.</li>
-            <li><strong>Licencia no transferible:</strong> Los derechos asociados con la licencia no se pueden transferir a otra persona.</li>
+            <li>Prohibition of Commercial Resale: Products may not be resold for commercial purposes without prior authorization.</li>
+            <li>No Modification or Reproduction: Modifying, copying, or reproducing the product's design or digital content for distribution or commercial use is not permitted.</li>
+            <li>Non-Transferable License: The rights associated with the license cannot be transferred to another person.</li>
             </ul>
     </details>
     </section>
@@ -534,50 +544,60 @@ load. The UV maps are configured with the following features:
     <section id="faq">
     <details>
         <summary>
-    <h2>Preguntas Frecuentes (FAQ)</h2>
+    <h2>Frequently Asked Questions (FAQ)</h2>
         </summary>
             <!-- Contenido de la sección -->
-            <h2 >Preguntas Frecuentes (FAQ)</h2>
+            
 
             <div >
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Por qué los modelos usan un texture atlas en lugar de texturas individuales?</h3>
-                    <p class="mt-2">El texture atlas reduce significativamente los draw calls y optimiza el uso de memoria GPU. Esto mejora el rendimiento en dispositivos móviles y VR, permitiendo mantener altos FPS sin sacrificar la calidad visual.</p>
+                <div >
+                    <h3>Why do the models use a texture atlas instead of individual textures?</h3>
+                    <p>The texture atlas significantly reduces draw calls and optimizes GPU memory usage. This improves
+                        performance on mobile and VR devices, allowing for high FPS without sacrificing visual quality.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Qué hago si el modelo aparece rotado al importarlo?</h3>
-                    <p class="mt-2">Este es un problema común debido a las diferentes configuraciones de ejes en los motores. Puede solucionarlo rotando el modelo 90 grados en el eje Y, o usar los formatos .glb/.fbx que suelen manejar mejor esta situación.</p>
+                <div>
+                    <h3>What should I do if the model appears rotated when importing it?</h3>
+                    <p>This is a common issue due to different axis configurations in engines. You can fix it by rotating the
+                        model 90 degrees on the Y-axis or using .glb/.fbx formats, which typically handle this situation better.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Cómo manejo las texturas que combinan múltiples datos en sus canales RGB?</h3>
-                    <p class="mt-2">Use un shader personalizado que separe los canales. Por ejemplo, para una textura r-rough-b-ao.png, extraiga la rugosidad del canal rojo y la oclusión ambiental del canal azul. En los archivos adicionales encontrará shaders GLSL de ejemplo.</p>
+                <div>
+                    <h3>How do I handle textures that combine multiple data in their RGB channels?</h3>
+                    <p>Use a custom shader to separate the channels. For example, for a texture like r-rough-b-ao.png, extract
+                        roughness from the red channel and ambient occlusion from the blue channel. Example GLSL shaders
+                        can be found in the additional files.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Puedo modificar las UVs para usar texturas individuales?</h3>
-                    <p class="mt-2">Es posible, pero no recomendable. Requeriría rehacer el UV mapping y hornear nuevas texturas, lo que podría resultar en pérdida de calidad y eliminaría los beneficios de optimización del texture atlas.</p>
+                <div >
+                    <h3>Can I modify the UVs to use individual textures?</h3>
+                    <p>It is possible but not recommended. It would require redoing the UV mapping and baking new textures,
+                        which could result in quality loss and eliminate the optimization benefits of the texture atlas.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Qué formato de compresión de textura debo usar?</h3>
-                    <p class="mt-2">Se recomienda ASTC para la mayoría de dispositivos móviles modernos. Si encuentra problemas de compatibilidad, use ETC2 como alternativa.</p>
+                <div>
+                    <h3>What texture compression format should I use?</h3>
+                    <p>ASTC is recommended for most modern mobile devices. If you encounter compatibility issues, use
+                        ETC2 as an alternative.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Por qué las texturas están limitadas a 4096x4096?</h3>
-                    <p class="mt-2">Este límite asegura compatibilidad con la mayoría de dispositivos móviles y motores, mientras mantiene un buen balance entre calidad visual y rendimiento. Texturas más grandes podrían causar problemas en equipos modestos.</p>
+                <div>
+                    <h3>Why are textures limited to 4096x4096?</h3>
+                    <p>This limit ensures compatibility with most mobile devices and engines while maintaining a good
+                        balance between visual quality and performance. Larger textures could cause issues on modest
+                        hardware.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Puedo usar estos modelos en juegos de alta resolución (4K/8K)?</h3>
-                    <p class="mt-2">No es recomendable para vistas cercanas en 4K/8K. Sin embargo, funcionan bien en 1080p o en vistas alejadas como en juegos RTS, incluso en resoluciones mayores.</p>
+                <div>
+                    <h3>Can I use these models in high-resolution games (4K/8K)?</h3>
+                    <p>They are not recommended for close-up views in 4K/8K. However, they work well in 1080p or for
+                        distant views, such as in RTS games, even at higher resolutions.</p>
                 </div>
             
-                <div class="faq-item">
-                    <h3 class="text-lg font-semibold text-blue-800">¿Es posible reducir aún más los polígonos de los modelos?</h3>
-                    <p class="mt-2">Los modelos ya están optimizados con un límite de 5000 vértices. Una reducción adicional probablemente deterioraría visiblemente la calidad de la malla.</p>
+                <div >
+                    <h3>Is it possible to further reduce the polygon count of the models?</h3>
+                    <p>The models are already optimized with a limit of 5000 vertices. Further reduction would likely visibly
+                        degrade the quality of the mesh.</p>
                 </div>
             </div>
     </details>
@@ -586,11 +606,11 @@ load. The UV maps are configured with the following features:
     <section id="contacto">
     <details>
         <summary>
-        <h2>Contacto</h2>
+        <h2>Contact</h2>
         </summary>
         <!-- Contenido de la sección -->
         <p>
-            Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros a traves de nuestros canales de soporte.
+            If you have any questions or suggestions, feel free to reach out to us through our support channels.
         </p>
     </details>
     </section>

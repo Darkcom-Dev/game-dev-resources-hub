@@ -39,8 +39,8 @@
     --border-color: #ccc;
 
     /* Gradient colors */
-    --gradient-color1: rgba(23, 24, 102, 0.85);
-    --gradient-color2: rgb(91, 55, 235);
+    --gradient-color1: rgb(0, 79, 148);
+    --gradient-color2: rgb(29,7,48);
   }
 }
 
@@ -135,7 +135,7 @@ th {
   color: var(--foreground-color);
   padding: 10px;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 

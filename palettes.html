@@ -29,8 +29,42 @@
                 // Leer el arcchivo como texto
                 reader.readAsText(file);
             }
-            
         });
      </script>
+     
+     <script>
+        async function leerArchivosDesdeGitHub(usuario, repositorio, carpeta) {
+      try {
+        const url = `https://api.github.com/repos/${usuario}/${repositorio}/contents/${carpeta}`;
+        const respuesta = await fetch(url);
+        if (!respuesta.ok) {
+          throw new Error(`Error al obtener la lista de archivos: ${respuesta.statusText}`);
+        }
+
+        const archivos = await respuesta.json();
+        const archivosFiltrados = archivos.filter(item => item.type === 'file');
+
+        for (const archivo of archivosFiltrados) {
+          const respuestaArchivo = await fetch(archivo.download_url);
+          if (!respuestaArchivo.ok) {
+            console.error(`Error al leer el archivo ${archivo.name}: ${respuestaArchivo.statusText}`);
+            continue;
+          }
+
+          const contenido = await respuestaArchivo.text();
+          console.log(`Contenido de ${archivo.name}:`, contenido);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    function leerArchivos() {
+      leerArchivosDesdeGitHub('Darkcom-Dev', 'game-dev-resources-hub', 'static/palettes');
+    }
+    leerArchivos();
+     </script>
+     
+
 </body>
 </html>

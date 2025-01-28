@@ -120,6 +120,10 @@ th {
   border-radius: 5px;
 }
 
+code {
+  border-radius: 10px;
+}
+
 .menu {
   background-color: var(--menu-background-color);
   border-radius: 20px;

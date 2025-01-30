@@ -124,6 +124,13 @@ code {
   border-radius: 10px;
 }
 
+img {
+  border-radius: 10px;
+  width : 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .menu {
   background-color: var(--menu-background-color);
   border-radius: 20px;

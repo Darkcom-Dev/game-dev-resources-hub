@@ -25,6 +25,7 @@
         <h1>General Manual for 3D Models</h1>
         <h2>Version 1.0 20/01/2024</h2>
         <h2>Braulio Madrid</h2>
+        <a href="static/docs/3d-models-general-english-manual.pdf">Descargar PDF</a>
         <ol>
             <li><a href="#introduccion">Introduction</a></li>
             <li><a href="#especificaciones">Technical Specifications</a></li>
@@ -401,7 +402,7 @@ void fragment() {
             <summary><h2>Texture Separation</h2></summary>
 
             <h3>What if I Don’t Know How to Program Shaders</h3>
-
+            <img src="static/img/channel-splitter-interface.png" alt="channel splitter interface">
             <p>
                 Another option is to manually separate the channels of the <em>`r-rough-b-ao.png`</em> texture into individual textures. If you're not familiar with programming, 
                 you can use image editing software like GIMP or Photoshop to do this.
@@ -812,6 +813,10 @@ python3 script.py -i texture.png -r roughness.png -g displace.png -b ao.png -a t
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
     
+                <!-- Nuevo campo: Asunto -->
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
     

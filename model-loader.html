@@ -8,11 +8,51 @@
     <link rel="shortcut icon" href="static/img/favicon.svg" type="image/x-icon">
     <title>Cargar Modelo GLB con Three.js</title>
     <style>
-      body { margin: 0; }
-      canvas { display: block; }
+      #model-preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+        #canvas {
+            width: 70%;
+            /*height: 70%;*/
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
+    <div class="menu">
+        <a class="a-menu" href="index.html">Inicio</a>
+        <a class="a-menu" href="user-manual.html">User Manual</a>
+        <a class="a-menu" href="palettes.html">Palettes</a>
+        <a class="a-menu" href="palettes-2.html">Palettes 2</a>
+        <a class="a-menu" href="fonts.html">Fonts</a>
+        <a class="a-menu" href="model-loader.html">Model Loader</a>
+        <!--a id="dark-mode-toggle">Modo Oscuro</a-->
+    </div>
+    <div id="content">
+      <h1>Modular Architecture Kit – Floors</h1>
+      <h2>Stairs & Retaining Walls for Parks & Shrines</h2>
+      <p>This Japanese Modular Architecture Kit includes 34 optimized models of floors, stairs, and retaining walls, perfect for creating Japanese-style parks and shrines in video games and architectural visualization. Each model is carefully designed to balance visual fidelity and performance, with a maximum of 4,143 vertices per mesh and efficient topology.</p>
+
+        <h6>Features:</h6>
+        <ul>
+          <li>34 modular and optimized models</li>
+          <li>Single material with three 4K textures (Albedo, Normal, and Data)</li>
+          <li>Low-performance impact (24,115 total vertices)</li>
+          <li>Compatible with game engines like Unreal Engine, Unity, and Godot</li>
+          <li>Ideal for renders, games, and real-time environments</li>
+        </ul>
+        <p></p>Perfect for developers and 3D artists looking for high-quality assets for environments inspired by traditional Japanese architecture.</p>
+    </div>
+    <section id="model-preview">
+      <canvas id="canvas"></canvas>
+    </section>
+    
     <script type="module" src="static/js/main.js"></script>
 </body>
 </html>

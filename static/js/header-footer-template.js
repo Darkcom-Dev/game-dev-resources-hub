@@ -1,5 +1,5 @@
 
-fetch('../../header-footer.json')
+fetch('https://darkcom-dev.github.io/game-dev-resources-hub/header-footer.json')
 .then(response => response.json())
 .then(data => {
     // Crea el header

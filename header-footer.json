@@ -1,0 +1,22 @@
+{
+    "favicon": "static/img/favicon.svg",
+    "logo": "static/img/logo-3.svg",
+    "background": "static/img/background.webp",
+    "links": {
+        "header": {
+        "home": "index.html",
+        "about": "https://darkcom-dev.github.io/portfolio/",
+        "contact": "contact.html",
+        "fonts": "fonts.html",
+        "palettes": "palettes.html",
+        "model-loader": "model-loader.html",
+        "user-manual": "user-manual.html"
+        },
+        "footer": {
+        "privacy-policy": "privacy-policy.html",
+        "terms-and-conditions": "terms-and-conditions.html",
+        "contact": "contact.html",
+        "site-map": "site-map.html"
+        }
+    }
+}

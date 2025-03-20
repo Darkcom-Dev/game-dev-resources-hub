@@ -69,7 +69,7 @@ function animate() {
 
 // Inicializar la escena y cargar el modelo
 initScene();
-loadGLBModel('../static/models/park-shrine-walls-stairs-floors.glb', 1, { x: 0, y: 0, z: 0 }).then(() => {
+loadGLBModel('static/models/park-shrine-walls-stairs-floors.glb', 1, { x: 0, y: 0, z: 0 }).then(() => {
   animate();
 });
 

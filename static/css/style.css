@@ -1,52 +1,64 @@
 :root {
   /* Light mode */
   --background-color: #f0f0f0;
-  --menu-background-color: rgba(150, 100, 255, 0.6);
-  --p-color: #350e7e;
-  --h-color: #665705;
+  --menu-background-color: #341b44;
+  --p-color: #332779;
+  --h-color: #4c7090;
 	--strong-color: #000;
   --foreground-color: #191529;
-  --input-background-color: rgb(0, 140, 255);
+  --input-background-color: #4c7090;
   --input-foreground-color: #2a0035;
-  --button-hover-background-color: #a300cc;
-  --button-hover-foreground-color: #2f003d;
+  --button-hover-background-color: #341b44;
+  --button-hover-foreground-color: #200c2f;
   --border-color: #333;
 
   /* Gradient colors */
-  --gradient-color1: rgba(55, 235, 169, 0.85);
-  --gradient-color2: rgb(91, 55, 235);
+  --gradient-color1: #341b44;
+  --gradient-color2: #1f2122;
 
   /* Shared variables */
-  --blured-color: rgba(48, 48, 64, 0.5);
+  --blured-color: #30323355;
   --size: 250px;
   --speed: 50s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 }
 
+/*
+#341b44 morado-1
+#ffffff blanco
+#e8e9ec gris-claro
+#200c2f morado-2
+#4c7090 azul-claro
+#332779 morado-3
+#303233 gris-oscuro
+#1f2122 gris-oscuro-2
+*/
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark mode */
-    --background-color: #121212;
-    --menu-background-color: rgba(32, 13, 75, 0.6);
+    --background-color: #200c2f;
+    --menu-background-color: #200c2f99;
     --p-color: #bd79eb;
-    --h-color: #f3d00a;
+    --h-color: #e8e9ec;
 		--strong-color: #fff;
     --foreground-color: #887cf1;
-    --input-background-color: rgb(29, 7, 48);
-    --input-foreground-color: #00a2ff;
-    --button-hover-background-color: #2a0035;
-    --button-hover-foreground-color: #9c00da;
+    --input-background-color: #200c2f;
+    --input-foreground-color: #4c7090;
+    --button-hover-background-color: #200c2f;
+    --button-hover-foreground-color: #332779;
     --border-color: #ccc;
 
     /* Gradient colors */
-    --gradient-color1: rgb(0, 79, 148);
-    --gradient-color2: rgb(29,7,48);
+    --gradient-color1: #341b44;
+    --gradient-color2: #1f2122;
   }
 }
 
 @font-face {
-  font-family: 'Neuropolitical';
-  src: url('../fonts/typodermic-license/neuropolitical-rg.ttf') format('truetype');
+  font-family: 'Commodore';
+  src: url('../fonts/sin-licencia/commodore-angled-v-1.2.ttf') format('truetype');
 }
 
 html {
@@ -56,7 +68,7 @@ html {
 body {
   background: linear-gradient(55deg, var(--gradient-color1), var(--gradient-color2));
   color: var(--foreground-color);
-  font-family: 'Neuropolitical', monospace;
+  font-family: 'Commodore', monospace;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

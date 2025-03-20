@@ -69,7 +69,11 @@ function animate() {
 
 // Inicializar la escena y cargar el modelo
 initScene();
-loadGLBModel('static/models/park-shrine-walls-stairs-floors.glb', 1, { x: 0, y: 0, z: 0 }).then(() => {
+const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "0.0.0.0";
+const basePath = isLocal ? "" : "https://darkcom-dev.github.io/game-dev-resources-hub/";
+// alert(basePath);
+
+loadGLBModel(basePath + 'static/models/park-shrine-walls-stairs-floors.glb', 1, { x: 0, y: 0, z: 0 }).then(() => {
   animate();
 });
 
